@@ -1,15 +1,18 @@
 const inputs = document.querySelector(".inputs"),
 reset = document.querySelector(".reset"),
-Clue = document.querySelector(".Clue span");
+Clue = document.querySelector(".inText");
 var button = document.createElement("input");
 var words;
+var whatButton1;
+var whatButton2;
+var whatButton3;
 
 
 function randomWord(){
     let ranObj = wordList[Math.floor(Math.random()* wordList.length)];
     let word = ranObj.word;
     console.log("test"+word+"");
-
+    console.log("test"+ranObj.Clue+"");
     Clue.innerText = ranObj.Clue;
 
     let search="";
@@ -17,15 +20,17 @@ function randomWord(){
     search += `<input type="text" disabled>`;
    }
    inputs.innerHTML = search;
+   console.log(word);
    words = word;
-    return word
+    return word;
 
 }
 // randomWord();
+     words = randomWord(); 
 
- words = randomWord()
 
-reset.addEventListener("click", randomWord);
+
+reset.addEventListener("click", words);
 
 // button.setAttribute("type", "button");
 // button.setAttribute("value", wordList1);
@@ -35,49 +40,72 @@ reset.addEventListener("click", randomWord);
 
 
 function letterCall(){
-     let myWord = wordList1[Math.floor(Math.random()* wordList1.length)];
-     let letter = myWord.letter;
-     console.log(myWord);
+     let randomChar = wordList1[Math.floor(Math.random()* wordList1.length)];
+     let letter = randomChar.letter;
+     console.log(randomChar);
     //  target.innerText += wordList1[myWord];
-        return myWord
+        return randomChar;
      //button.innerText += myWord.button;
 }
 
 function button1(){
    // let button1Text = "Button 1 says this"
-    let btn1 = document.getElementById("button1");
-    btn1.innerHTML=splitWords().toUpperCase();
+   whatButton1 = assignRandomButtonVal();
+    let btn1 = document.getElementById(whatButton1); //button1
+    btn1.innerHTML= splitWords().toUpperCase();
 }
 
 function button2(){
-    var btn2 = document.getElementById("button2");
-    btn2.innerHTML=splitWords().toUpperCase();
+    var btn2
+    whatButton2 = assignRandomButtonVal();
+    if(whatButton1 == "button2" || whatButton1 == "button3"){
+        btn2 = document.getElementById("button1");
+    }else{
+        btn2 = document.getElementById(whatButton2);
+    }
+     
+    btn2.innerHTML=letterCall().toUpperCase();
 }
 
 function button3(){
-    var btn3 = document.getElementById("button3");
-    btn3.innerHTML=splitWords().toUpperCase();
+    var btn3
+    whatButton3 = assignRandomButtonVal();
+    if(whatButton1 == "button3" || whatButton1 == "button1"){
+        btn3 = document.getElementById("button2");
+    }else{
+        btn3 = document.getElementById(whatButton2);
+    }
+    btn3.innerHTML=letterCall().toUpperCase();
 }
 
 function cards(){
     button1();
-     button2();
-     button3();
-     console.log("testing "+words+"");
+    button2();
+    button3();
 }
 
 function splitWords(){
+    console.log(words);
+    if(words !== undefined){
     let wordArray = words.split('')
     console.log(wordArray)
     let myletter = Math.floor(Math.random()* wordArray.length);
+    console.log("testing "+words+"");
      console.log(wordArray[myletter]);
+
      return wordArray[myletter];
+    }
 }
 
-// function matchLetter(){
-//     let btnltr = ;
-//     btnltr = cards();
-// }
+function assignRandomButtonVal(){
+    var buttons = ["button1", "button2", "button3"];
+    let myButtons = Math.floor(Math.random()* buttons.length);
+    console.log(buttons[myButtons]);
+    return buttons[myButtons]
+}
+
+
+assignRandomButtonVal();
 
 
 
