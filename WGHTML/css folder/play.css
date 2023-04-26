@@ -1,0 +1,253 @@
+/* font-family: 'Bungee Spice', cursive;
+font-family: 'Righteous', cursive;
+font-family: 'Teko', sans-serif; */
+
+body{
+    background-color: black;
+    display: flex;
+    align-items: left;
+    justify-content: left;
+    min-height: 0vh;
+ }
+ 
+ .Heading{
+     width: 1000px;
+ }
+ 
+ .Heading{
+     font-size: 600px;
+     font-weight: bolder;
+     font-family: 'Bungee Spice', cursive;
+     padding: 10px 50px;
+     text-shadow: #0000FF;
+ }
+ .Content{
+     font-size: 39px;
+ }
+ 
+ 
+ 
+ .h2{
+     display: block;
+     text-align: left;
+     font-family: 'Bungee Spice', cursive;
+     font-size: 80px;
+     margin-bottom: 300px;
+    
+}
+.h2{
+    text-shadow: 10px 10px 20px grey
+}
+
+@keyframes simple{
+         33%{
+           background-color: yellow;
+         }
+         66%{
+           background-color:green;
+         }
+         100%{
+           background-color: red;
+         }
+       }
+ 
+ .btn{
+     display: inline;
+     font-size: 50px;
+     background-color: burlywood;
+     border-radius: 30px;
+     cursor: pointer;
+     margin-bottom: 200px;
+ }
+ .btn1{
+     margin-left: 80px;
+    
+ }
+ .btn1:hover{
+     background-color: chocolate;
+     animation-name: simple;
+     animation-duration: 5s;
+ }
+ 
+ .btn2{
+     margin-left: 200px;
+     border-color: blue;
+     
+ }
+ .btn2:hover{
+     background-color: chocolate;
+     animation-name: simple;
+     animation-duration: 5s;
+ }
+
+ #modal1{
+     font-size: 25px;
+     font-weight: bold;
+     
+ }
+ .modal-dialog{
+     margin-top: 500px;
+     margin-left: 500px;
+ }
+ 
+ .reset{
+     width:100px;
+     cursor: pointer;
+     border: none;
+     font-size: 15px;
+ 
+ }
+
+body{
+    background-color:black;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    min-height: 100vh;
+
+}
+.MainBox{
+    height: 1050px;
+    width: 1300px;
+    background:white;
+    box-shadow: 20px 20px 10px inset grey;
+
+}
+
+
+.MainBox{
+    margin-top: 100px;
+    margin-right:80px;
+    font-size: 25px;
+    font-weight: 400px;
+    padding: 20px 50px;
+    border: 5px solid black;
+    }
+.h1{
+    font-size: 50px;
+    color: black;
+    font-family: 'Bungee Spice', cursive;
+    text-align: center;
+    margin-top: 50px;
+    
+}
+
+.MainBox .inputBox{
+    margin: 25px 25px 35px;
+}
+
+.inputBox .inputs{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+}
+
+.inputs input{
+    height: 100px;
+    width: 100px;
+    margin: 5px;
+    font-size: 30px;
+    font-weight: 100px;
+    text-transform: uppercase;
+    text-align: center;
+    color: black;
+    border-radius: 9px;
+    background: white;
+    border: 5px solid black;
+}
+
+.HelpDetails{
+    margin: 20px 0px 25px;
+}
+.HelpDetails p{
+    font-size: 50px;
+    margin-bottom: 10px;
+}
+
+.HelpDetails .Clue{
+    font-family: 'Bungee Spice', cursive;
+
+    text-align: center;
+}
+.HelpDetails-ext{
+ text-align: center;
+}
+
+.image{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 100px;
+}
+.wrong{
+    display: inline;
+    margin-left: 300px;
+    font-size :50px;
+
+    
+}
+
+.MainBox .reset{
+    justify-content: center;
+}
+.reset{
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+    width: 25%;
+    margin-left: 400px;
+    margin-top: 70px;
+    outline: none;
+    border: none;
+    font-family: 'Bungee Spice', cursive;
+    color: whitesmoke;
+    font-size: 50px;
+    padding: 25px 10px;
+    background: black;
+    border-radius: 25px;
+}
+
+
+.reset:hover{
+    background-color:black
+}
+
+.MainBox .cards{
+    margin: 25px 25px 35px;
+}
+.cards .cardInput{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+}
+.cardInput .input{
+    height: 250px;
+    width: 300px;
+    margin: 20px;
+    font-size: 150px;
+    font-weight: 400px;
+    text-align: center;
+    background: white;
+    border-radius: 10px;
+    border: 5px solid black;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* .row1{
+    font-size: 50px;
+    font-family: Arial, Helvetica, sans-serif;  
+    margin-top: 150px;  
+    margin-left: 5px;
+} */

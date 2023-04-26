@@ -1,0 +1,91 @@
+/* Background Image*/
+
+body{
+   background-color: black;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   min-height: 50vh;
+}
+
+.Heading{
+    width: 1000px;
+}
+
+.Heading{
+    font-size: 500px;
+    font-weight: bolder;
+    font-family: 'Bungee Spice', cursive;
+    padding: 20px 50px;
+}
+.Content{
+    font-size: 39px;
+}
+
+
+
+.h1{
+    display: block;
+    text-align: center;
+    margin-top:  300px;
+    font-family: 'Bungee Spice', cursive;
+    font-size: 80px;
+    }
+ @keyframes simple{
+        33%{
+          background-color: yellow;
+        }
+        66%{
+          background-color:green;
+        }
+        100%{
+          background-color: red;
+        }
+      }
+
+.btn{
+    display: inline-block;
+    text-align: center;
+    font-size: 50px;
+    background-color: burlywood;
+    margin-top: 100px;
+    border-radius: 30px;
+    border-style:hidden;
+    cursor: pointer;
+}
+.btn1{
+    margin-left: 200px;
+    border-color: blue;
+}
+.btn1:hover{
+    background-color: chocolate;
+    animation-name: simple;
+    animation-duration: 5s;
+}
+
+.btn2{
+    margin-left: 200px;
+    border-color: blue;
+    
+}
+.btn2:hover{
+    background-color: chocolate;
+    animation-name: simple;
+    animation-duration: 5s;
+}
+#modal1{
+    font-size: 25px;
+    font-weight: bold;
+    
+}
+#exampleModal{
+    margin-left: 50px;
+}
+
+.reset{
+    width:100px;
+    cursor: pointer;
+    border: none;
+    font-size: 15px;
+
+}

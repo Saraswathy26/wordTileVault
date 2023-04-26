@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Play</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bungee+Spice&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/e7ce321c2e.js" crossorigin="anonymous"></script>
+        <link href="https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Righteous&family=Teko&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="/WGHTML/css folder/play.css">
+   <style>
+    #btn{
+        background-color: grey;
+        color: aqua;
+        border-radius: 2px;
+        cursor: pointer;
+    }
+   </style>
+
+</head>
+<body>
+
+    <div class="Heading">
+        <h2 class="h2">WORD TILE VAULT</h2>
+            <div class="Content">
+        <a href="/WGHTML/Play.html" target="_top"><button class="btn btn1" >Play</button></a>
+        <button type="button" class="btn btn-primary btn2" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            Help
+          </button>
+          
+          <!-- Modal  -->
+          <div class="modal fade" id="exampleModal" tabindex="10" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="exampleModalLabel">How To Play</h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body" id="modal1">
+                  Choose a card with the matching letter.
+                  Keep in mind!!! You only have 7 lifes.
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+</div>
+</div>
+
+<div class="MainBox">
+    <h1 class="h1"> Find The Word By Choosing a Card</h1>
+    
+    <div class="inputBox">
+        <div class="inputs"></div>
+    </div>
+   <div class="HelpDetails">
+        <p class="Clue">Hint-<span></span></p>
+         </div>
+    
+    <div class="cards">
+        <div class="cardInput">
+            <!-- <a href=""><i class="fa-solid fa-trash"></i></a> -->
+            <button id="button1" class="input"></button>
+            <button id="button2" class="input"></button>
+            <button id="button3" class="input"></button>
+
+    </div>
+    </div>
+
+    <div class="HelpDetails-ext">
+        <div class="image">
+            <div class="image-ext">
+           <img class="fa-sharp fa-solid fa-face-awesome fa-beat fa-lg" src="/images/face-sad-cry-solid.svg" width="40px" height="40px">
+           <img class="fa-sharp fa-solid fa-face-awesome fa-beat fa-lg" src="/images/face-sad-tear-solid.svg" width="40px" height="40px">
+           <img class="fa-sharp fa-solid fa-face-awesome fa-beat fa-lg" src="/images/face-angry-solid.svg" width="40px" height="40px">
+           <img class="fa-sharp fa-solid fa-face-awesome fa-beat fa-lg" src="/images/face-frown-solid.svg" width="40px" height="40px">
+           <img class="fa-sharp fa-solid fa-face-awesome fa-beat fa-lg" src="/images/face-grin-hearts-solid.svg" width="40px" height="40px">
+           <img class="fa-sharp fa-solid fa-face-awesome fa-beat fa-lg" src="/images/face-smile-solid (1).svg" width="40px" height="40px">
+           <img class="fa-sharp fa-solid fa-face-awesome fa-beat fa-lg" src="/images/face-smile-wink-solid.svg" width="40px" height="40px">
+        </div>
+        <p class="wrong">
+            <img class="fa-sharp fa-solid fa-face-awesome fa-beat fa-lg" src="/images/discord.svg" width="50px" height="50px"> : </p>
+    </div>
+</div>
+     
+        
+    <button onclick="cards()" class="reset btn">Reset</button>
+</div>
+    
+    
+
+
+
+<script src="https://kit.fontawesome.com/e7ce321c2e.js" crossorigin="anonymous"></script>
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   <!-- <div class="container">
+    <h1>Heading</h1>
+    <p id="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita beatae atque modi dolor in debitis ipsam? Voluptatibus, vero velit? Porro error reprehenderit dolore quasi modi itaque, quia velit non perspiciatis.</p>
+
+   </div>
+
+   <button id="btn" onclick="test()">Test</button>
+
+   <script>
+    function test(){
+    let para = document.getElementsByTagName("para");
+    if(para.style.display === "none"){
+        para.style.display = "block";
+            }else{
+                btn.style.display = "none";
+            }
+}; -->
+
+
+    </script>
+
+
+
+
+
+
+
+
+
+
+    <!-- <div class="container">
+    
+        <div class="row1">
+            
+            Type your question here
+                  </div>
+
+      <div class="row">
+        div
+      </div>
+
+
+
+    </div> -->
+    
+
+    <!-- <div id="box" class="color dimension">
+        <p>Content</p>
+    </div>
+
+    -->
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+    <!-- <ul>
+        <li class="cl">List 1</li>
+        <li class="cl" id="sec">List 2</li>
+        <li class="cl cl1 cl2"> List 3</li>
+        <li class="cl">List 4</li>
+    </ul>
+    
+    
+    <h1>Heading 1</h1>
+    <div id="divElm">
+        <h1> Heading 2</h1>
+        <p>Paragraph 1</p>
+        <h1>Heading 3</h1>
+        <p>Paragraph 2</p>
+        <h1> Heading 4</h1>
+        <p>Paragraph 3</p>
+    </div>
+    
+    <button id="btn" style="color: aqua;">send</button>
+ -->
+
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+     <script src="/JS folder/WGCALL.js"></script>
+     <script src="/JS folder/WGQ.js"></script>
+    <script src="/JS folder/WG.js"></script>
+    
+</body>
+</html>
+
+
+
