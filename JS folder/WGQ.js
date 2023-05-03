@@ -1,10 +1,10 @@
 const wordList = [
      {
-        word: "Lion",
+        word: "lion",
         Clue: "King of the jungle"
      },
      {
-        word: "Cheetah",
+        word: "cheetah",
         Clue: "Fastest"
      },
      {
@@ -12,11 +12,11 @@ const wordList = [
         Clue: "Hump on the back"
      },
      {
-        word: "Python",
+        word: "python",
         Clue: "A programming Language"
      },
      {
-        word: "Kangaroo",
+        word: "kangaroo",
         Clue: "Rhyme with a ROO"
      },
      {

@@ -2,155 +2,181 @@
 font-family: 'Righteous', cursive;
 font-family: 'Teko', sans-serif; */
 
-body{
+body {
     background-color: black;
     display: flex;
     align-items: left;
     justify-content: left;
     min-height: 0vh;
- }
- 
- .Heading{
-     width: 1000px;
- }
- 
- .Heading{
-     font-size: 600px;
-     font-weight: bolder;
-     font-family: 'Bungee Spice', cursive;
-     padding: 10px 50px;
-     text-shadow: #0000FF;
- }
- .Content{
-     font-size: 39px;
- }
- 
- 
- 
- .h2{
-     display: block;
-     text-align: left;
-     font-family: 'Bungee Spice', cursive;
-     font-size: 80px;
-     margin-bottom: 300px;
-    
 }
-.h2{
+
+.Heading {
+    width: 100%;
+}
+
+.Heading {
+    font-family: 'Bungee Spice', cursive;
+    padding: 20px 50px;
+    text-shadow: #0000FF;
+}
+
+.Content {
+    font-size: 39px;
+}
+.head{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+    margin-left: 500px;
+}
+
+.h2 {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-family: 'Bungee Spice', cursive;
+    font-size: 25px;
+    margin-top: 10px;
+    
+
+}
+
+.h2 {
     text-shadow: 10px 10px 20px grey
 }
 
-@keyframes simple{
-         33%{
-           background-color: yellow;
-         }
-         66%{
-           background-color:green;
-         }
-         100%{
-           background-color: red;
-         }
-       }
- 
- .btn{
-     display: inline;
-     font-size: 50px;
-     background-color: burlywood;
-     border-radius: 30px;
-     cursor: pointer;
-     margin-bottom: 200px;
- }
- .btn1{
-     margin-left: 80px;
-    
- }
- .btn1:hover{
-     background-color: chocolate;
-     animation-name: simple;
-     animation-duration: 5s;
- }
- 
- .btn2{
-     margin-left: 200px;
-     border-color: blue;
-     
- }
- .btn2:hover{
-     background-color: chocolate;
-     animation-name: simple;
-     animation-duration: 5s;
- }
+#sound{
+    display: inline-flex;
+    flex-direction: row;
+    color: red;
+    margin-left: 500px;
+    width: 50px;
+    height: 30px;
+    margin-top:30px;
+    padding: 5px 5px;
+    justify-content: right;
+    border-color: white;
 
- #modal1{
-     font-size: 25px;
-     font-weight: bold;
-     
- }
- .modal-dialog{
-     margin-top: 500px;
-     margin-left: 500px;
- }
- 
- .reset{
-     width:100px;
-     cursor: pointer;
-     border: none;
-     font-size: 15px;
- 
- }
-
-body{
-    background-color:black;
 }
-body{
+.sound1{
+    width: 2px;
+}
+
+@keyframes simple {
+    33% {
+        background-color: yellow;
+    }
+    66% {
+        background-color: green;
+    }
+    100% {
+        background-color: red;
+    }
+}
+
+.btn {
+    display: inline;
+    font-size: 25px;
+    background-color: burlywood;
+    border-radius: 30px;
+    cursor: pointer;
+}
+.btn:hover{
+    background-color: burlywood !important;
+}
+.btn1 {
+    margin-left: 80px;
+
+}
+
+.btn1:hover {
+    background-color: chocolate;
+    animation-name: simple;
+    animation-duration: 5s;
+}
+
+.btn2 {
+    border-color: blue;
+
+}
+
+.btn2:hover {
+    background-color: chocolate;
+    animation-name: simple;
+    animation-duration: 5s;
+}
+
+#modal1 {
+    font-size: 25px;
+    font-weight: bold;
+
+}
+
+.modal-dialog {
+    margin: 0px auto;
+}
+
+.reset {
+    width: 100px;
+    cursor: pointer;
+    border: none;
+    font-size: 15px;
+
+}
+
+body {
+    background-color: black;
+}
+
+body {
     display: flex;
     align-items: center;
     justify-content: right;
     min-height: 100vh;
 
 }
-.MainBox{
-    height: 1050px;
-    width: 1300px;
-    background:white;
+
+.MainBox {
+    background: white;
     box-shadow: 20px 20px 10px inset grey;
 
 }
 
-
-.MainBox{
-    margin-top: 100px;
-    margin-right:80px;
+.MainBox {
+    margin: 10px;
     font-size: 25px;
-    font-weight: 400px;
+    font-weight: 400;
     padding: 20px 50px;
     border: 5px solid black;
-    }
-.h1{
-    font-size: 50px;
+}
+
+.h1 {
+    font-size: 25px;
     color: black;
     font-family: 'Bungee Spice', cursive;
     text-align: center;
-    margin-top: 50px;
-    
+    margin-top: 20px;
+
 }
 
-.MainBox .inputBox{
+.MainBox .inputBox {
     margin: 25px 25px 35px;
 }
 
-.inputBox .inputs{
+.inputBox .inputs {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    
-}
 
-.inputs input{
-    height: 100px;
-    width: 100px;
+}
+.inputs input {
+    height: 80px;
+    width: 80px;
     margin: 5px;
-    font-size: 30px;
-    font-weight: 100px;
+    font-size: 50px;
+    font-weight: 100;
     text-transform: uppercase;
     text-align: center;
     color: black;
@@ -159,75 +185,87 @@ body{
     border: 5px solid black;
 }
 
-.HelpDetails{
+.right {
+    background-color: #64e064 !important;
+}
+.Details {
     margin: 20px 0px 25px;
 }
-.HelpDetails p{
-    font-size: 50px;
+
+.HelpDetails p {
+    font-size: 25px;
     margin-bottom: 10px;
 }
 
-.HelpDetails .Clue{
+.HelpDetails .hint-text {
     font-family: 'Bungee Spice', cursive;
-
     text-align: center;
 }
-.HelpDetails-ext{
- text-align: center;
+.hint-text span {
+    text-decoration: underline;
+}
+.HelpDetails-ext {
+    text-align: center;
 }
 
-.image{
+.image {
     display: flex;
     flex-wrap: wrap;
-    margin-left: 100px;
+    margin-left: 200px;
 }
-.wrong{
+
+.image-ext{
+   margin-left: 350px;
+}
+
+.wrong {
     display: inline;
-    margin-left: 300px;
-    font-size :50px;
+    margin-bottom: 10px;
+    margin-left: 90px;
+    font-size: 50px;
 
-    
+
 }
 
-.MainBox .reset{
+.MainBox .reset {
     justify-content: center;
 }
-.reset{
-    display: flex;
+
+.buttonlist {
+    text-align: center;
+}
+
+.play, .reset {
+    text-align: center;
     justify-content: center;
     cursor: pointer;
-    width: 25%;
-    margin-left: 400px;
-    margin-top: 70px;
-    outline: none;
-    border: none;
-    font-family: 'Bungee Spice', cursive;
-    color: whitesmoke;
-    font-size: 50px;
-    padding: 25px 10px;
+    width: 20%;
+    font-size: 25px;
+    padding: 10px;
     background: black;
-    border-radius: 25px;
 }
 
 
-.reset:hover{
-    background-color:black
+.reset:hover {
+    background-color: black
 }
 
-.MainBox .cards{
+.MainBox .cards {
     margin: 25px 25px 35px;
 }
-.cards .cardInput{
+
+.cards .cardInput {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    
+
 }
-.cardInput .input{
-    height: 250px;
-    width: 300px;
-    margin: 20px;
-    font-size: 150px;
+
+.cardInput .input {
+    height: 120px;
+    width: 120px;
+    margin: 10px;
+    font-size: 50px;
     font-weight: 400px;
     text-align: center;
     background: white;
@@ -236,18 +274,9 @@ body{
 }
 
 
-
-
-
-
-
-
-
-
-
 /* .row1{
-    font-size: 50px;
-    font-family: Arial, Helvetica, sans-serif;  
-    margin-top: 150px;  
-    margin-left: 5px;
+font-size: 25px;
+font-family: Arial, Helvetica, sans-serif;
+margin-top: 150px;
+margin-left: 5px;
 } */
