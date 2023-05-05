@@ -33,36 +33,53 @@ body {
 }
 
 .h2 {
-    display: flex;
+    display: inline-flex;
     justify-content: center;
     text-align: center;
     font-family: 'Bungee Spice', cursive;
-    font-size: 70px;
-    margin-top: 10px;
-    margin: 50px;
+    font-size: 80px;
+    margin-top: 1%;
     
-
 }
-
-/* .h2 {
-    text-shadow: 10px 10px 20px grey
-} */
-
+.bts{
+    display:flex ;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-top: 10%;
+    margin-left: 10%;
+}
+#play{
+    display: inline-flex;
+    flex-wrap: wrap;
+    font-family: 'Bungee Spice', cursive;
+    border-color:orange;
+    text-align: center;
+    margin-left: 35%;
+    margin-bottom: 20%;
+}
 #sound{
     display: inline-flex;
-    flex-direction: row;
-    color: red;
-    margin-left: 500px;
-    width: 50px;
-    height: 30px;
-    margin-top:30px;
-    padding: 5px 5px;
-    justify-content: right;
-    border-color: white;
+    width: 20%;
+    height: 40px;
+    color: black;
+    margin-left: 20%;
+}
+#beat{
+    align-items: center;
+    width: 20%;
+    size: 20%;
 
 }
-.sound1{
-    width: 2px;
+.btn2 {
+    margin-left: 40%;
+    margin-bottom: 10%;
+    width: 20%;
+    font-family:'Bungee Spice', cursive; ;
+    font-size: 30px;
+    padding: 10px;
+    background: black;
+    border-color:black;
+
 }
 
 @keyframes simple {
@@ -80,7 +97,7 @@ body {
 .btn {
     display: inline;
     font-size: 25px;
-    background-color: burlywood;
+    
     border-radius: 30px;
     cursor: pointer;
 }
@@ -98,21 +115,17 @@ body {
     animation-duration: 5s;
 }
 
-.btn2 {
-    border-color: blue;
 
-}
 
 .btn2:hover {
     background-color: chocolate;
+    border-color: orange;
     animation-name: simple;
     animation-duration: 5s;
 }
 
 #modal1 {
     font-size: 25px;
-    /* font-weight: bold; */
-
 }
 
 .modal-dialog {
@@ -145,24 +158,23 @@ body {
 
 .MainBox {
     background: white;
-    /* box-shadow: 20px 20px 10px inset grey; */
-
+    
 }
 
 .MainBox {
-    margin: 10px;
+    margin: 5px;
     font-size: 25px;
     font-weight: 400;
-    padding: 70px 50px;
+    padding: 50px 50px;
     border: 5px solid black;
 }
 
 .h1 {
-    font-size: 25px;
+    font-size: 30px;
     color: black;
     font-family: 'Bungee Spice', cursive;
     text-align: center;
-    margin-top: 20px;
+    margin-top: 2%;
 
 }
 
@@ -228,7 +240,7 @@ body {
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-between;
-    margin-left: 30%;
+    margin-left: 20%;
     margin-bottom: 10px;
     font-size: 25px;
     
@@ -238,11 +250,14 @@ body {
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-between;
-    margin-left: 38.5%;
+    margin-left: 10%;
     margin-bottom: 10px;
     font-size: 25px;
 
 
+}
+#helpModal{
+    margin-left: 20px;
 }
 
 .MainBox .reset {
@@ -297,9 +312,3 @@ body {
 }
 
 
-/* .row1{
-font-size: 25px;
-font-family: Arial, Helvetica, sans-serif;
-margin-top: 150px;
-margin-left: 5px;
-} */

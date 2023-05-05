@@ -157,7 +157,7 @@ function sound(){
 
     function setWrongLetters(whatwrongLetters){
         var wrongWords = document.querySelector(".wrong");
-        wrongWords.innerText = ("Wrong Letters: " +whatwrongLetters);
+        wrongWords.innerText = ("I'm Wrong - " +whatwrongLetters);
     }
 
     function clearWrongLetters(whatwrongLetters){
@@ -165,12 +165,12 @@ function sound(){
             wrongLetters.pop();
         }
         var wrongWords = document.querySelector(".wrong");
-        wrongWords.innerText = ("Wrong Letters: " +whatwrongLetters);
+        wrongWords.innerText = ("I'm Wrong - " +whatwrongLetters);
     }
 
     function clearSelecctionCount(){
         var wrongSelectCounts = document.querySelector(".wrongCount");
-        wrongSelectCounts.innerText = ("You still have - " + 7);
+        wrongSelectCounts.innerText = (" life's left  " + 7);
     }
 
 
@@ -183,7 +183,7 @@ function sound(){
     function wrongSelectionCount(){
             var wrongSelectCount = document.querySelector(".wrongCount");
             let t = wrongLetters.length-7;
-            wrongSelectCount.innerText = ("You still have " + t);
+            wrongSelectCount.innerText = ("life's left " + t);
             }
 
         function disabledPlaybtn(){

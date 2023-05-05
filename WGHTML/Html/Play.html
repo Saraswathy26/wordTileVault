@@ -24,21 +24,24 @@
     <link rel="stylesheet" href="/WGHTML/css folder/play.css">
     
 </head>
-<div><h2 class="h2">WORD TILE VAULT</h2></div>
+
 <body>
+    <div><h2 class="h2">WORD TILE VAULT</h2>
+        
+        <div class="bts"><button onclick="disabledPlaybtn()" id="play" class="play btn">Play</button>
+        <button onclick="play()" id="sound" type="button" hidden><i class="fa-regular fa-music fa-xl" style="color: #e02b0b;"></i>x</button></div>
+        <button type="button" class="btn btn-primary btn2"  data-bs-toggle="modal"
+        data-bs-target="#helpModal">?</button>
+       
+    </div>
+
+
     <div class="Heading">
         <div class="MainBox">
-            <div class="head">
-                <!-- <h2 class="h2">WORD TILE VAULT</h2> -->
-                <audio id="myAudio">
-                    <source src="/images/children-logo-116101.mp3" type="audio/mpeg">
-                </audio>
-                <p>
-                    <button onclick="play()" id="sound" type="button">Play Audio </button>
-                </p>
-                
-            </div>
+            
                 <h1 class="h1"> Find The Word By Choosing a Card</h1>
+
+                
             <div class="inputBox">
                 <div class="inputs"></div>
                 <input type="hidden" id="temp" />
@@ -49,7 +52,6 @@
 
             <div class="cards">
                 <div class="cardInput">
-                    <!-- <a href=""><i class="fa-solid fa-trash"></i></a> -->
                     <button id="button1" onclick="checkLetter(1)" class="input">?</button>
                     <button id="button2" onclick="checkLetter(2)" class="input">?</button>
                     <button id="button3" onclick="checkLetter(3)" class="input">?</button>
@@ -58,19 +60,15 @@
 
             <div class="HelpDetails-ext">
                 <div class="image">
+                    <p class ="wrongCount"></p>
                     <p class="wrong"></p>
-                </div> 
-            </div>
-            <div class="imageq">
-                <p class ="wrongCount"></p>
+                
             </div>
 
             <div class="buttonlist">
-                <button onclick="disabledPlaybtn()" id="play" class="play btn">Play</button>
+                
                 <button onclick="cards()" id="reset" class="reset btn">Next</button>
             </div>
-            <button type="button" class="btn btn-primary btn2" data-bs-toggle="modal"
-                data-bs-target="#helpModal">?</button>
             <input type="hidden" class="btn btn-primary btn2 winner" id="winnerModalId" data-bs-toggle="modal"
                 data-bs-target="#winnerModal" />
             <input type="hidden" class="btn btn-primary btn2 winner" id="loserModalId" data-bs-toggle="modal"
@@ -118,7 +116,7 @@
                 <div class="modal-dialog modal-dialog-centered">
                     <div class="modal-content">
                         <div class="modal-header">
-                            <h1 class="modal-title fs-5" id="loserModalLabel">Hurray !!</h1>
+                            <h1 class="modal-title fs-5" id="loserModalLabel">Sorry buddy !!</h1>
                             <button type="button" class="btn-close" onclick="cards()" data-bs-dismiss="modal"
                                 aria-label="Close"></button>
                         </div>
@@ -137,75 +135,6 @@
     </div>
 
     <script src="https://kit.fontawesome.com/e7ce321c2e.js" crossorigin="anonymous"></script>
-
-
-    <!-- <div class="container">
- <h1>Heading</h1>
- <p id="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita beatae atque modi dolor in debitis ipsam? Voluptatibus, vero velit? Porro error reprehenderit dolore quasi modi itaque, quia velit non perspiciatis.</p>
-
-</div>
-
-<button id="btn" onclick="test()">Test</button>
-
-<script>
- function test(){
- let para = document.getElementsByTagName("para");
- if(para.style.display === "none"){
-     para.style.display = "block";
-         }else{
-             btn.style.display = "none";
-         }
-}; -->
-
-
-    </script>
-
-
-    <!-- <div class="container">
-
-    <div class="row1">
-
-        Type your question here
-              </div>
-
-  <div class="row">
-    div
-  </div>
-
-
-
-</div> -->
-
-
-    <!-- <div id="box" class="color dimension">
-    <p>Content</p>
-</div>
-
--->
-
-
-    <!-- <ul>
-    <li class="cl">List 1</li>
-    <li class="cl" id="sec">List 2</li>
-    <li class="cl cl1 cl2"> List 3</li>
-    <li class="cl">List 4</li>
-</ul>
-
-
-<h1>Heading 1</h1>
-<div id="divElm">
-    <h1> Heading 2</h1>
-    <p>Paragraph 1</p>
-    <h1>Heading 3</h1>
-    <p>Paragraph 2</p>
-    <h1> Heading 4</h1>
-    <p>Paragraph 3</p>
-</div>
-
-<button id="btn" style="color: aqua;">send</button>
--->
-
-
 </body>
 
 </html>
