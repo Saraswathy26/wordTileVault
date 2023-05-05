@@ -17,7 +17,7 @@ body {
 .Heading {
     font-family: 'Bungee Spice', cursive;
     padding: 20px 50px;
-    text-shadow: #0000FF;
+    /* text-shadow: #0000FF; */
 }
 
 .Content {
@@ -37,15 +37,16 @@ body {
     justify-content: center;
     text-align: center;
     font-family: 'Bungee Spice', cursive;
-    font-size: 25px;
+    font-size: 70px;
     margin-top: 10px;
+    margin: 50px;
     
 
 }
 
-.h2 {
+/* .h2 {
     text-shadow: 10px 10px 20px grey
-}
+} */
 
 #sound{
     display: inline-flex;
@@ -110,12 +111,16 @@ body {
 
 #modal1 {
     font-size: 25px;
-    font-weight: bold;
+    /* font-weight: bold; */
 
 }
 
 .modal-dialog {
     margin: 0px auto;
+}
+#modalheader{
+    font-size: 40px;
+    font-weight: bold;
 }
 
 .reset {
@@ -140,7 +145,7 @@ body {
 
 .MainBox {
     background: white;
-    box-shadow: 20px 20px 10px inset grey;
+    /* box-shadow: 20px 20px 10px inset grey; */
 
 }
 
@@ -148,7 +153,7 @@ body {
     margin: 10px;
     font-size: 25px;
     font-weight: 400;
-    padding: 20px 50px;
+    padding: 70px 50px;
     border: 5px solid black;
 }
 
@@ -219,10 +224,23 @@ body {
 }
 
 .wrong {
-    display: inline;
+    display: inline-flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: 30%;
     margin-bottom: 10px;
-    margin-left: 90px;
-    font-size: 50px;
+    font-size: 25px;
+    
+}
+.wrongCount {
+    display: inline-flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: 38.5%;
+    margin-bottom: 10px;
+    font-size: 25px;
 
 
 }
@@ -262,15 +280,20 @@ body {
 }
 
 .cardInput .input {
-    height: 120px;
-    width: 120px;
+    height: 170px;
+    width: 130px;
     margin: 10px;
     font-size: 50px;
     font-weight: 400px;
     text-align: center;
-    background: white;
+    background: rgb(255, 255, 255);
     border-radius: 10px;
     border: 5px solid black;
+    background: url('/images/cardsDesign.jpg') no-repeat;
+    cursor:pointer;
+    border: none;
+    background-size: 150%; /* To fill the dimensions of container (button), or */
+    background-size: 130px auto;
 }
 
 

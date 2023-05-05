@@ -24,18 +24,19 @@
     <link rel="stylesheet" href="/WGHTML/css folder/play.css">
     
 </head>
-
+<div><h2 class="h2">WORD TILE VAULT</h2></div>
 <body>
-
     <div class="Heading">
         <div class="MainBox">
             <div class="head">
-                <h2 class="h2">WORD TILE VAULT</h2>
-                <button onclick="sound()" id="sound"><i class="fa-brands fa-soundcloud fa-lg"
-                     style="color: #511f1f;"><audio src="/images/children-logo-116101.mp3" 
-                     id="song" loop="true" hidden>
-                    </i>
-                </button>
+                <!-- <h2 class="h2">WORD TILE VAULT</h2> -->
+                <audio id="myAudio">
+                    <source src="/images/children-logo-116101.mp3" type="audio/mpeg">
+                </audio>
+                <p>
+                    <button onclick="play()" id="sound" type="button">Play Audio </button>
+                </p>
+                
             </div>
                 <h1 class="h1"> Find The Word By Choosing a Card</h1>
             <div class="inputBox">
@@ -49,45 +50,31 @@
             <div class="cards">
                 <div class="cardInput">
                     <!-- <a href=""><i class="fa-solid fa-trash"></i></a> -->
-                    <button id="button1" onclick="checkLetter(1)" class="input"></button>
-                    <button id="button2" onclick="checkLetter(2)" class="input"></button>
-                    <button id="button3" onclick="checkLetter(3)" class="input"></button>
+                    <button id="button1" onclick="checkLetter(1)" class="input">?</button>
+                    <button id="button2" onclick="checkLetter(2)" class="input">?</button>
+                    <button id="button3" onclick="checkLetter(3)" class="input">?</button>
                 </div>
             </div>
 
             <div class="HelpDetails-ext">
                 <div class="image">
-                    <div class="image-ext">
-                        <img class="fa-sharp fa-solid fa-face-awesome fa-beat fa-lg"
-                            src="/images/face-sad-cry-solid.svg" width="40px" height="40px">
-                        <img class="fa-sharp fa-solid fa-face-awesome fa-beat fa-lg"
-                            src="/images/face-sad-tear-solid.svg" width="40px" height="40px">
-                        <img class="fa-sharp fa-solid fa-face-awesome fa-beat fa-lg" src="/images/face-angry-solid.svg"
-                            width="40px" height="40px">
-                        <img class="fa-sharp fa-solid fa-face-awesome fa-beat fa-lg" src="/images/face-frown-solid.svg"
-                            width="40px" height="40px">
-                        <img class="fa-sharp fa-solid fa-face-awesome fa-beat fa-lg"
-                            src="/images/face-grin-hearts-solid.svg" width="40px" height="40px">
-                        <img class="fa-sharp fa-solid fa-face-awesome fa-beat fa-lg"
-                            src="/images/face-smile-solid (1).svg" width="40px" height="40px">
-                        <img class="fa-sharp fa-solid fa-face-awesome fa-beat fa-lg"
-                            src="/images/face-smile-wink-solid.svg" width="40px" height="40px">
-                    </div>
-                    <p class="wrong">
-                        <img class="fa-sharp fa-solid fa-face-awesome fa-beat fa-lg " src="/images/discord.svg"
-                            width="50px" height="50px"> :
-                    </p>
-                </div>
+                    <p class="wrong"></p>
+                </div> 
+            </div>
+            <div class="imageq">
+                <p class ="wrongCount"></p>
             </div>
 
             <div class="buttonlist">
-                <button onclick="cards()" id="play" class="play btn">Play</button>
-                <button onclick="cards()" id="reset" class="reset btn">Reset</button>
+                <button onclick="disabledPlaybtn()" id="play" class="play btn">Play</button>
+                <button onclick="cards()" id="reset" class="reset btn">Next</button>
             </div>
             <button type="button" class="btn btn-primary btn2" data-bs-toggle="modal"
                 data-bs-target="#helpModal">?</button>
             <input type="hidden" class="btn btn-primary btn2 winner" id="winnerModalId" data-bs-toggle="modal"
                 data-bs-target="#winnerModal" />
+            <input type="hidden" class="btn btn-primary btn2 winner" id="loserModalId" data-bs-toggle="modal"
+                data-bs-target="#loserModal" />
         </div>
         <div class="Content">
             <!-- Modal  -->
@@ -118,6 +105,25 @@
                         </div>
                         <div class="modal-body" id="modal2">
                             Congratulations !! You Guessed it right.
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" onclick="cards()" data-bs-dismiss="modal">
+                                Next
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal fade" id="loserModal" tabindex="10" aria-labelledby="loserModal" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h1 class="modal-title fs-5" id="loserModalLabel">Hurray !!</h1>
+                            <button type="button" class="btn-close" onclick="cards()" data-bs-dismiss="modal"
+                                aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body" id="modal2">
+                            You Lost !! Try Again.
                         </div>
                         <div class="modal-footer">
                             <button type="button" class="btn btn-secondary" onclick="cards()" data-bs-dismiss="modal">
