@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Play</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -28,10 +29,12 @@
 <body>
     <div><h2 class="h2">WORD TILE VAULT</h2>
         
-        <div class="bts"><button onclick="disabledPlaybtn()" id="play" class="play btn">Play</button>
-        <button onclick="play()" id="sound" type="button" hidden><i class="fa-regular fa-music fa-xl" style="color: #e02b0b;"></i>x</button></div>
+        <!-- <div class="bts"><button onclick="disabledPlaybtn()" id="play" class="play btn"></button>
+        <button onclick="play()" id="sound" type="button" hidden><i class="fa-regular fa-music fa-xl" style="color: #e02b0b;"></i>x</button></div> -->
         <button type="button" class="btn btn-primary btn2"  data-bs-toggle="modal"
-        data-bs-target="#helpModal">?</button>
+        data-bs-target="#helpModal"><span class="material-symbols-outlined">
+            help
+            </span></button>
        
     </div>
 
@@ -39,7 +42,7 @@
     <div class="Heading">
         <div class="MainBox">
             
-                <h1 class="h1"> Find The Word By Choosing a Card</h1>
+                <h1 class="h1" id="h1"></h1>
 
                 
             <div class="inputBox">
@@ -47,7 +50,7 @@
                 <input type="hidden" id="temp" />
             </div>
             <div class="HelpDetails">
-                <p class="hint-text">Hint - <span></span></p>
+                <p class="hint-text"><span></span></p>
             </div>
 
             <div class="cards">
@@ -67,7 +70,7 @@
 
             <div class="buttonlist">
                 
-                <button onclick="cards()" id="reset" class="reset btn">Next</button>
+                <button onclick="cards()" id="reset" class="reset btn">Start</button>
             </div>
             <input type="hidden" class="btn btn-primary btn2 winner" id="winnerModalId" data-bs-toggle="modal"
                 data-bs-target="#winnerModal" />

@@ -127,7 +127,7 @@ function randomWord() {
         inputs = document.querySelector(".inputs");
     let ranObj = wordList[Math.floor(Math.random() * wordList.length)];
     let word = ranObj.word;
-    hintText.innerText = ranObj.Clue;
+    hintText.innerText = ("Hint - '"+ranObj.Clue+"'");
 
     let search = "";
     for (let i = 0; i < word.length; i++) {
@@ -142,7 +142,10 @@ function cards(word = undefined) {
     generateTileLetters(word);
     clearWrongLetters(wrongLetters);
     clearSelecctionCount();
-    document.querySelector("#play").disabled = true;
+    document.getElementById('reset').innerText  = 'Skip';
+    document.getElementById('h1').innerText  = 'Find The Word By Choosing a Card';
+    
+    //document.querySelector("#play").disabled = true;
 }
 cards();
 
@@ -170,7 +173,7 @@ function sound(){
 
     function clearSelecctionCount(){
         var wrongSelectCounts = document.querySelector(".wrongCount");
-        wrongSelectCounts.innerText = (" life's left  " + 7);
+        wrongSelectCounts.innerText = (" life's left  -" + 7);
     }
 
 
@@ -187,7 +190,9 @@ function sound(){
             }
 
         function disabledPlaybtn(){
-            document.querySelector("#play").disabled = true;
+           // document.querySelector("#play").disabled = true;
+        //    document.querySelector("#play").innnerHTML="New";
+           document.getElementById('play').innerText  = 'Skip';
            cards();
         }
 

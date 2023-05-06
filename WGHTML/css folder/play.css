@@ -11,7 +11,7 @@ body {
 }
 
 .Heading {
-    width: 100%;
+    width: 70%;
 }
 
 .Heading {
@@ -38,7 +38,7 @@ body {
     text-align: center;
     font-family: 'Bungee Spice', cursive;
     font-size: 80px;
-    margin-top: 1%;
+    margin-top: 0%;
     
 }
 .bts{
@@ -52,10 +52,9 @@ body {
     display: inline-flex;
     flex-wrap: wrap;
     font-family: 'Bungee Spice', cursive;
-    border-color:orange;
     text-align: center;
     margin-left: 35%;
-    margin-bottom: 20%;
+    margin-bottom: 10%;
 }
 #sound{
     display: inline-flex;
@@ -71,18 +70,20 @@ body {
 
 }
 .btn2 {
-    margin-left: 40%;
-    margin-bottom: 10%;
-    width: 20%;
-    font-family:'Bungee Spice', cursive; ;
-    font-size: 30px;
+    margin-left: 70%;
+    margin-bottom: 12%;
+    width: 5%;
+    font-family:'Bungee Spice', cursive;
+    color: orangered;
+    font-size: 100px;
+    size: 50px;
     padding: 10px;
     background: black;
     border-color:black;
 
 }
 
-@keyframes simple {
+/* @keyframes simple {
     33% {
         background-color: yellow;
     }
@@ -92,7 +93,7 @@ body {
     100% {
         background-color: red;
     }
-}
+} */
 
 .btn {
     display: inline;
@@ -102,7 +103,7 @@ body {
     cursor: pointer;
 }
 .btn:hover{
-    background-color: burlywood !important;
+    background-color:black ;
 }
 .btn1 {
     margin-left: 80px;
@@ -110,18 +111,14 @@ body {
 }
 
 .btn1:hover {
-    background-color: chocolate;
-    animation-name: simple;
-    animation-duration: 5s;
+    background-color: black;
 }
 
 
 
 .btn2:hover {
-    background-color: chocolate;
-    border-color: orange;
-    animation-name: simple;
-    animation-duration: 5s;
+    background-color: black;
+    border-color:black;
 }
 
 #modal1 {
@@ -218,9 +215,11 @@ body {
     font-family: 'Bungee Spice', cursive;
     text-align: center;
 }
+/* 
 .hint-text span {
     text-decoration: underline;
-}
+} */
+
 .HelpDetails-ext {
     text-align: center;
 }
@@ -250,7 +249,7 @@ body {
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-between;
-    margin-left: 10%;
+    margin-left: 5%;
     margin-bottom: 10px;
     font-size: 25px;
 
