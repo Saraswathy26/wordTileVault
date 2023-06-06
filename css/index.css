@@ -303,7 +303,7 @@ body {
     background: rgb(255, 255, 255);
     border-radius: 10px;
     border: 5px solid black;
-    background: url('/images/cardsDesign.jpg') no-repeat;
+    background: url('../images/cardsDesign.jpg') no-repeat;
     cursor:pointer;
     border: none;
     background-size: 150%; /* To fill the dimensions of container (button), or */
